@@ -7,11 +7,34 @@ A Python script to extract directory tree structure and code, with an interactiv
 - Interactive CLI to select directories.
 - Extracts and lists file structures and contents.
 - Copies the output to the clipboard.
-- Ideal for code review and integration with AI tools like ChatGPT and Anthropic.
 
 ## Installation
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/TreeScribe.git
-   cd TreeScribe
+   git clone https://github.com/yourusername/treex.git
+   cd treex
+   ```
+
+2. Install the dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Run the script with the root directory and the output file:
+```sh
+python extractor.py <root_dir> <output_file>
+```
+
+Example:
+```sh
+python extractor.py . output.txt
+```
+
+Select the directories you want to include using the arrow keys and space bar, then press enter. The output will be saved to the specified file and copied to the clipboard.
+
+## License
+
+This project is licensed under the MIT License.
